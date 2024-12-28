@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التطوع مع نورني</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <body>
+    <section>
+      <div class="container">
+          <h4 class="heding">التطوع مع <span class="spa">نورني</span></h4>
+          <div class="row">
+              <div class="col-12">
+                  <div class="card">
+                      <form action="https://formspree.io/f/mjvowel" method="POST" enctype="multipart/form-data" id="volunteerForm">
+                          <div class="info">
+                              <label>اسمك من ثلاث مقاطع</label>
+                              <input type="text" placeholder="اسمك" name="name" required>
+                          </div>
+  
+                          <div class="info">
+                              <label>رقم هاتف واتساب فعال</label>
+                              <input type="number" placeholder="رقمك واتساب" name="whatsapp" required>
+                          </div>
+  
+                          <div class="info">
+                              <label>سنة الميلاد</label>
+                              <input type="date" name="birth_year" required>
+                          </div>
+  
+                          <div class="info">
+                              <label>ما هو تخصصك</label>
+                              <input type="text" placeholder="تخصصك" name="major" required>
+                          </div>
+  
+                          <div class="info">
+                              <label>اسم الجامعة</label>
+                              <input type="text" placeholder="اسم الجامعة" name="university" required>
+                          </div>
+  
+                          <div class="info">
+                              <label>ادخل رقمك الجامعي</label>
+                              <input type="number" placeholder="رقمك الجامعي" name="university_id" required>
+                          </div>
+  
+                          <hr>
+                          <h6>شوية أسئلة</h6>
+                          <label class="form-label">هل سبق لك وكنت جزء من مبادرة تطوعية </label>
+                          <div class="info">
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="choice" value="نعم" id="option1" required>
+                                  <label class="form-check-label" for="option1">نعم</label>
+                              </div>
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="choice" value="لا" id="option2">
+                                  <label class="form-check-label" for="option2">لا</label>
+                              </div>
+                          </div>
+  
+                          <div class="info">
+                              <label>اذا كانت اجابتك نعم، ادخل مسماك داخل المبادرة</label>
+                              <input type="text" placeholder="إجابتك" name="initiative_role">
+                          </div>
+  
+                          <hr>
+                          <label class="form-label">ماذا تمتلك من الخبرة</label>
+                          <div class="info">
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="experience" value="Design" id="design">
+                                  <label class="form-check-label" for="design">Design</label>
+                              </div>
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="experience" value="Social Media" id="socialMedia">
+                                  <label class="form-check-label" for="socialMedia">Social Media</label>
+                              </div>
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="experience" value="Training Facilitator" id="trainer">
+                                  <label class="form-check-label" for="trainer">ميسرين دورات تدريبية</label>
+                              </div>
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="experience" value="Photography" id="photography">
+                                  <label class="form-check-label" for="photography">تصوير</label>
+                              </div>
+                          </div>
+  
+                          <div class="info">
+                              <label>اذا كان لديك اي من الخبرات السابقة يرجى مشاركتها</label>
+                              <input type="file" name="experience_file" class="form-control" accept="image/*,video/*" required>
+                          </div>
+  
+                          <hr>
+                          <div class="info">
+                              <label>إذا كان لديك شهادة خبرة سابقة لاي من المجالات التي تم ذدكرها بالاعلي يرجى مشاركتها</label>
+                              <input type="file" name="certificate" class="form-control" accept="image/*,video/*,application/pdf" required>
+                          </div>
+  
+                          <hr>
+                          <div class="info">
+                              <label>ما هي المهارات التي تعتقد أنها لديك والتي ستساهم في العمل التطوعي؟</label>
+                              <input type="text" placeholder="إجابتك" name="skills" required>
+                          </div>
+  
+                          <hr>
+                          <label class="form-label">هل تستطيع التزام وقت محدد للعمل التطوعي؟</label>
+                          <div class="info">
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="commitment" value="نعم" id="commitYes" required>
+                                  <label class="form-check-label" for="commitYes">نعم</label>
+                              </div>
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="commitment" value="لا" id="commitNo">
+                                  <label class="form-check-label" for="commitNo">لا</label>
+                              </div>
+                          </div>
+  
+                          <hr>
+                          <div class="info">
+                              <label>لماذا ترغب في ان تكون متطوعاً؟</label>
+                              <input type="text" placeholder="إجابتك" name="reason" required>
+                          </div>
+  
+                          <hr>
+                          <label class="form-label">هل تمتلك حساب على منصة نحنُ الوطنية؟</label>
+                          <div class="info">
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="has_account" value="نعم" id="accountYes" required>
+                                  <label class="form-check-label" for="accountYes">نعم</label>
+                              </div>
+                              <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input me-2" type="radio" name="has_account" value="لا" id="accountNo">
+                                  <label class="form-check-label" for="accountNo">لا</label>
+                              </div>
+                          </div>
+  
+                          <hr>
+                          <div class="info">
+                              <label>يرجى تحميل ملف يحتوي على فيديو تعريف عن نفسك</label>
+                              <input type="file" name="introduction_video" class="form-control" accept="video/*" required>
+                          </div>
+  
+                          <button type="submit" class="btn btn-primary">إرسال</button>
+                      </form>
+                  </div>
+                  <h6>تصميم وتطوير <a href="https://badrprog.vercel.app/" target="_blank">بدر الزعبي</a></h6>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <script>
+      
+      document.getElementById('volunteerForm').onsubmit = function(event) {
+          const files = document.querySelectorAll('input[type="file"]');
+          for (let file of files) {
+              if (file.files.length > 0) {
+                  if (file.files[0].size > 100 * 1024 * 1024) {
+                      alert('حجم الملف لا يجب أن يتجاوز 100 ميجابايت');
+                      event.preventDefault();
+                      return;
+                  }
+              }
+          }
+      }
+  </script>
+  </body>
+</html>
